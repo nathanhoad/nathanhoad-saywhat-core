@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`projectToExportNodesList exports 1`] = `
+Array [
+  Object {
+    "character": "Character",
+    "condition": undefined,
+    "dialogue": "Hello!",
+    "go_to_node_id": "",
+    "id": "node1",
+    "mutation": undefined,
+    "next_node_id": "line2",
+    "type": "dialogue",
+  },
+  Object {
+    "character": "Character",
+    "condition": "has_met_character",
+    "dialogue": "It's nice to meet you.",
+    "go_to_node_id": "",
+    "id": "line2",
+    "mutation": undefined,
+    "next_node_id": "line3",
+    "type": "dialogue",
+  },
+  Object {
+    "character": undefined,
+    "condition": undefined,
+    "dialogue": undefined,
+    "go_to_node_id": "",
+    "id": "line3",
+    "mutation": undefined,
+    "next_node_id": "line4",
+    "type": "comment",
+  },
+  Object {
+    "character": undefined,
+    "condition": undefined,
+    "dialogue": undefined,
+    "go_to_node_id": "",
+    "id": "line4",
+    "mutation": "has_met_character = true",
+    "next_node_id": "line5",
+    "type": "mutation",
+  },
+  Object {
+    "character": undefined,
+    "condition": "something",
+    "dialogue": undefined,
+    "go_to_node_id": "node2",
+    "id": "line5",
+    "mutation": undefined,
+    "next_node_id": "response1",
+    "type": "goto",
+  },
+  Object {
+    "id": "response1",
+    "responses": Array [
+      Object {
+        "condition": undefined,
+        "next_node_id": "node1",
+        "prompt": "Can you repeat that?",
+      },
+      Object {
+        "condition": "something",
+        "next_node_id": "",
+        "prompt": "That's all for now",
+      },
+    ],
+    "type": "responses",
+  },
+  Object {
+    "id": "node2",
+    "responses": Array [
+      Object {
+        "condition": undefined,
+        "next_node_id": "node1",
+        "prompt": undefined,
+      },
+    ],
+    "type": "responses",
+  },
+]
+`;
+
+exports[`projectToJson exports 1`] = `"{\\"seq1\\":{\\"id\\":\\"seq1\\",\\"nodes\\":{\\"node1\\":{\\"id\\":\\"node1\\",\\"type\\":\\"dialogue\\",\\"character\\":\\"Character\\",\\"dialogue\\":\\"Hello!\\",\\"nextNodeId\\":\\"line2\\"},\\"line2\\":{\\"id\\":\\"line2\\",\\"type\\":\\"dialogue\\",\\"condition\\":\\"has_met_character\\",\\"character\\":\\"Character\\",\\"dialogue\\":\\"It's nice to meet you.\\",\\"nextNodeId\\":\\"line3\\"},\\"line3\\":{\\"id\\":\\"line3\\",\\"type\\":\\"comment\\",\\"nextNodeId\\":\\"line4\\"},\\"line4\\":{\\"id\\":\\"line4\\",\\"type\\":\\"mutation\\",\\"mutation\\":\\"has_met_character = true\\",\\"nextNodeId\\":\\"line5\\"},\\"line5\\":{\\"id\\":\\"line5\\",\\"type\\":\\"goto\\",\\"condition\\":\\"something\\",\\"gotoNodeId\\":\\"node2\\",\\"nextNodeId\\":\\"response1\\"},\\"response1\\":{\\"id\\":\\"response1\\",\\"type\\":\\"responses\\",\\"responses\\":[{\\"prompt\\":\\"Can you repeat that?\\",\\"nextNodeId\\":\\"node1\\"},{\\"condition\\":\\"something\\",\\"prompt\\":\\"That's all for now\\",\\"nextNodeId\\":null}]},\\"node2\\":{\\"id\\":\\"node2\\",\\"type\\":\\"responses\\",\\"responses\\":[{\\"nextNodeId\\":\\"node1\\"}]}}}}"`;
+
+exports[`projectToResX exports 1`] = `
+"<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>
+
+
+    <root>
+      <resheader name=\\"resmimetype\\">
+          <value>text/microsoft-resx</value>
+      </resheader>
+      <resheader name=\\"version\\">
+          <value>2.0</value>
+      </resheader>
+      <resheader name=\\"reader\\">
+          <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+      </resheader>
+      <resheader name=\\"writer\\">
+          <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+      </resheader>
+      <data name=\\"Character\\"><value>Character</value><comment>Character name</comment></data>
+<data name=\\"line1\\"><value>Hello!</value><comment>Example Sequence (seq1 / node1)</comment></data>
+<data name=\\"line2\\"><value>It's nice to meet you.</value><comment>Example Sequence (seq1 / node1)</comment></data>
+
+    </root>"
+`;
+
+exports[`projectToTres exports 1`] = `
+"[gd_resource type=\\"Resource\\" load_steps=2 format=2]
+
+[ext_resource path=\\"res://addons/saywhat_godot/dialogue_resource.gd\\" type=\\"Script\\" id=1]
+
+[resource]
+script = ExtResource( 1 )
+lines = {\\"node1\\":{\\"id\\":\\"node1\\",\\"type\\":\\"dialogue\\",\\"character\\":\\"Character\\",\\"dialogue\\":\\"Hello!\\",\\"go_to_node_id\\":\\"\\",\\"next_node_id\\":\\"line2\\"},\\"line2\\":{\\"id\\":\\"line2\\",\\"type\\":\\"dialogue\\",\\"condition\\":\\"has_met_character\\",\\"character\\":\\"Character\\",\\"dialogue\\":\\"It's nice to meet you.\\",\\"go_to_node_id\\":\\"\\",\\"next_node_id\\":\\"line3\\"},\\"line3\\":{\\"id\\":\\"line3\\",\\"type\\":\\"comment\\",\\"go_to_node_id\\":\\"\\",\\"next_node_id\\":\\"line4\\"},\\"line4\\":{\\"id\\":\\"line4\\",\\"type\\":\\"mutation\\",\\"mutation\\":\\"has_met_character = true\\",\\"go_to_node_id\\":\\"\\",\\"next_node_id\\":\\"line5\\"},\\"line5\\":{\\"id\\":\\"line5\\",\\"type\\":\\"goto\\",\\"condition\\":\\"something\\",\\"go_to_node_id\\":\\"node2\\",\\"next_node_id\\":\\"response1\\"},\\"response1\\":{\\"id\\":\\"response1\\",\\"type\\":\\"responses\\",\\"responses\\":[{\\"prompt\\":\\"Can you repeat that?\\",\\"next_node_id\\":\\"node1\\"},{\\"condition\\":\\"something\\",\\"prompt\\":\\"That's all for now\\",\\"next_node_id\\":\\"\\"}]},\\"node2\\":{\\"id\\":\\"node2\\",\\"type\\":\\"responses\\",\\"responses\\":[{\\"next_node_id\\":\\"node1\\"}]}}"
+`;
+
+exports[`projectToXml exports 1`] = `
+"<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>
+
+<sequences><sequence id=\\"seq1\\"><node id=\\"node1\\" type=\\"dialogue\\"><dialogue  character=\\"Character\\" nextNodeId=\\"line2\\">Hello!</dialogue></node><node id=\\"line2\\" type=\\"dialogue\\"><dialogue if=\\"has_met_character\\" character=\\"Character\\" nextNodeId=\\"line3\\">It's nice to meet you.</dialogue></node><node id=\\"line3\\" type=\\"comment\\"></node><node id=\\"line4\\" type=\\"mutation\\"><mutation do=\\"has_met_character = true\\" nextNodeId=\\"line5\\" /></node><node id=\\"line5\\" type=\\"goto\\"><goto if=\\"something\\" goToNodeId=\\"node2\\" nextNodeId=\\"response1\\" /></node>
+              <node id=\\"response1\\" type=\\"responses\\">
+                  <responses>
+                    <response  nextNodeId=\\"node1\\">Can you repeat that?</response><response if=\\"something\\" nextNodeId=\\"\\">That's all for now</response>
+                  </responses>
+                </node>
+              <node id=\\"node2\\" type=\\"responses\\">
+                  <responses>
+                    <response  nextNodeId=\\"node1\\">undefined</response>
+                  </responses>
+                </node></sequence></sequences>"
+`;

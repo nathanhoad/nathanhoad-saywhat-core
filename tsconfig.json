@@ -1,0 +1,9 @@
+{
+  "exclude": ["dist", "node_modules", "**/*.test.*"],
+  "compilerOptions": {
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "declaration": true
+  }
+}
