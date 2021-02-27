@@ -1,6 +1,6 @@
 {
   "name": "@nathanhoad/saywhat-core",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A collection of SayWhat parsing and exporting utilities",
   "main": "dist/index.js",
   "scripts": {
